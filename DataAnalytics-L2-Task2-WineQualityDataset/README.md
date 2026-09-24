@@ -52,7 +52,19 @@ rf.feature_importances_ plotted via barplot. Top: alcohol, volatile acidity, sul
 **10. Conclusion**
 Best for Deployment: Random Forest - Highest accuracy & F1, handles imbalance, gives feature importance, fast inference, robust. Use case: Predict Good/Bad before bottling. Future: XGBoost, SMOTE.
 
-## Files
-- T_ARCHANA_TASK2.ipynb
-- WineQT.csv
-- README.md
+
+## Visualizations
+
+The project includes:
+
+- Distribution plots of chemical features.
+- Correlation heatmap.
+- Other relevant visualizations used during the analysis.
+
+## Project Files
+
+- `T ARCHANA_TASK2.ipynb` — Jupyter Notebook containing the complete analysis and modelling.
+- `WineQT.csv` — Dataset used for the project.
+- `README.md` — Project documentation.
+
+
