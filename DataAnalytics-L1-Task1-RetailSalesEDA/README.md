@@ -1,5 +1,5 @@
 # Data Analytics - Level 1 - Task 1
-## EDA On Retail Sales
+# EDA On Retail Sales
 
 ### Objective
 To perform Exploratory Data Analysis (EDA) on retail store sales data and identify useful sales, customer, and product insights.
