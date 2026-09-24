@@ -7,7 +7,7 @@ Demonstrate professional-level data cleaning skills by taking a deliberately mes
 Python, pandas, numpy, Jupyter Notebook
 
 ## Dataset Used
-Titanic Dataset (Kaggle) - Deliberately messy version with nulls, duplicates, inconsistent formatting, outliers
+dirty_cafe_sales Dataset (Kaggle) - Deliberately messy version with nulls, duplicates, inconsistent formatting, outliers
 
 ## Feature Checklist Completed
 
@@ -68,7 +68,15 @@ Saved final clean dataset as `titanic_cleaned.csv` for future analysis.
 - titanic_raw.csv - Original messy dataset
 - titanic_cleaned.csv - Final cleaned dataset
 - README.md
+# Project Files
 
+- Jupyter Notebook containing the complete cleaning process.
+- Dataset used for the project.
+- Screenshots/output files.
+
+## Conclusion
+
+The project demonstrates a systematic data-cleaning workflow and prepares the dataset for further analysis.
 ## How to Run
 pip install pandas numpy
 jupyter notebook data_cleaning.ipynb
