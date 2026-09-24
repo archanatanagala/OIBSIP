@@ -17,6 +17,18 @@ pip install nltk pandas matplotlib pyspellchecker
 python -m nltk.downloader punkt gutenberg stopwords
 
 No-install fallback available - custom functions included.
+## Analysis and Implementation
+
+- Loaded and processed the text corpus.
+- Performed text preprocessing.
+- Tokenized the text data.
+- Analyzed word frequency.
+- Built text prediction functionality using language patterns.
+- Implemented autocomplete functionality.
+- Implemented autocorrect/spelling correction functionality.
+- Used edit-distance based correction techniques.
+- Compared different approaches for text prediction and spelling correction.
+- Visualized relevant results and performance.
 
 ## Steps Done
 
@@ -63,11 +75,15 @@ Our Limitations: Limited vocab 2000 words, No neural model, No personalization, 
 Gboard Production: On-device Neural LM, Trie + FST <10ms, Personalized federated learning, Swipe voice emoji, 1B+ users
 
 Scalability 1M/hour: Use Trie + LRU cache + SymSpell precompute + FastAPI + Redis + Auto-scaling
+## Project Files
 
-## Files
-T ARCHANA_TASK 5.ipynb - Main notebook
-corpus.txt - Corpus
-README.md
+- `T ARCHANA_TASK 5.ipynb` — Jupyter Notebook containing the implementation and analysis.
+- `corpus.txt` — Text corpus used for analysis.
+- `gutenberg_metadata.csv` — Gutenberg corpus metadata.
+- `README.md` — Project documentation.
+## Conclusion
+
+The project demonstrates how NLP techniques can be used to build autocomplete and autocorrect systems and compare different approaches for text prediction and spelling correction
 
 ## Result
 85% accuracy <5ms latency, all 10 checklist points completed.
