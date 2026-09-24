@@ -1,24 +1,53 @@
-# TASK 4 - Unveiling the Android App Market (Google Play Store Analysis)
+# TASK 4: Unveiling the Android App Market (Google Play Store)
 
 ## Objective
-To perform a comprehensive EDA on Google Play Store ecosystem - cleaning messy real-world data, exploring app categories, analyzing ratings, size, installs, pricing trends, and conducting sentiment analysis on user reviews to provide data-driven insights for new app developers.
+
+To perform a comprehensive Exploratory Data Analysis (EDA) on the Google Play Store ecosystem by exploring app categories, ratings, sizes, installs, pricing trends, and user reviews to provide data-driven insights for app developers.
 
 ## Tech Stack
-Python, pandas, numpy, matplotlib, seaborn, plotly, VADER / TextBlob, Jupyter Notebook
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
 ## Datasets Used
-1. `googleplaystore.csv` - 10k+ apps data from Kaggle
-2. `googleplaystore_user_reviews.csv` - User reviews data
 
-## Steps Performed
+- `googleplaystore.csv` — Google Play Store app data
+- `googleplaystore_user_reviews.csv` — Google Play Store user reviews
 
-#### 1. Data Loading & Cleaning
-- Loaded both datasets separately
-- Fixed data types: Cleaned `Installs` (10,000+), `Size` (M/k), `Price` ($)
-- Handled nulls, removed 483 duplicates
-- Converted Ratings, Reviews to numeric
+## Analysis Performed
 
-#### 2. EDA & Visualizations
-- **Category Analysis:** Bar chart - FAMILY & GAME are most saturated categories
-- **Ratings Analysis:** Distplot of ratings (4.1 avg), Avg rating by category
-- **
+- Loaded and inspected the datasets.
+- Cleaned and prepared the data for analysis.
+- Analyzed app categories and distributions.
+- Analyzed app ratings.
+- Examined app sizes and installation trends.
+- Analyzed free and paid applications.
+- Examined app pricing.
+- Analyzed user reviews and sentiment-related information.
+- Created visualizations to identify important patterns and trends.
+
+## Visualizations
+
+The project includes charts and visualizations to understand:
+
+- App category distribution
+- Ratings distribution
+- Installation trends
+- App size patterns
+- Pricing patterns
+- User review analysis
+
+## Project Files
+
+- `T ARCHANA_TASK4.ipynb` — Jupyter Notebook containing the complete analysis.
+- `googleplaystore.csv` — Google Play Store dataset.
+- `googleplaystore_user_reviews.csv` — User reviews dataset.
+- `screenshots/` — Project screenshots and outputs.
+
+## Conclusion
+
+This analysis provides an overview of the Google Play Store app market and helps understand patterns related to app categories, ratings, installations, pricing, and user reviews.
