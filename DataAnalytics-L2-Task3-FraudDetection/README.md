@@ -74,13 +74,12 @@ Most important = **RECALL**. FN = missed fraud = direct loss. FP = genuine flagg
 | Logistic Regression | 0.97 | 0.08 | 0.90 | 0.15 | 0.97 | Very Fast |
 | Random Forest | 0.999 | 0.85 | 0.82 | 0.83 | 0.98 | Medium |
 
+# Project Files
+- `T ARCHANA_TASK 3.ipynb` — Jupyter Notebook containing the complete analysis and modelling.
+- `creditcard.csv` — Dataset used for the project.
+- `screenshots/` — Project screenshots and outputs.
+- `README.md` — Project documentation.
+
 ## Conclusion
-**Best for Deployment: Random Forest** for balanced Precision+Recall. For strict real-time 1M/hour, use **Logistic Regression as Tier-1** (fast) + Random Forest as Tier-2 (accurate). Two-tier system handles scale, latency <100ms, and catches 90% frauds.
 
-Future: Try XGBoost, Isolation Forest, real-time feature store, and monitoring dashboard.
-
-## Files
-- T_ARCHANA_TASK3.ipynb
-- creditcard.csv
-- README.md
-- fraud_model_comparison.csv (output)
+This project demonstrates a machine learning workflow for identifying fraudulent credit card transactions while considering the challenges caused by highly imbalanced data.
