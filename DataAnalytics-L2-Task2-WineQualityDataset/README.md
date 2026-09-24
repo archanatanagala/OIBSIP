@@ -1,4 +1,5 @@
-# TASK 2: Wine Quality Prediction - T ARCHANA
+# 2: Wine Quality Prediction - T ARCHANA
+**OASIS INFOBYTE SIP Data Analytics -Level 2-Task 2**
 
 ## Dataset
 **File:** `WineQT.csv` (Kaggle - 1143 rows, 13 columns, 78.06 kB)
