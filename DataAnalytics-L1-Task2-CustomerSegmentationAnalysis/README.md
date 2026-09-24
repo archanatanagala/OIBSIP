@@ -1,56 +1,92 @@
-# LEVEL1-TASK2 - Customer Segmentation Analysis 
+# Data Analytics - Level 1 - Task 2
+## Customer Segmentation Analysis
 
-## Objective
-Segment e-commerce customers based on purchasing behaviour to enable targeted marketing.
+### Objective
+To segment e-commerce customers based on their purchasing behaviour and identify customer groups that can support targeted marketing strategies.
 
-## Dataset
-Online Retail II dataset from UCI (sourced via Kaggle - e-commerce customer data). 500k+ transactions from 2009-2011.
+### Dataset
+Online Retail II dataset from UCI (sourced via Kaggle), containing e-commerce transaction data from 2009–2011.
 
-## Tech Stack
-- Python, Pandas, NumPy
-- Scikit-learn (StandardScaler, KMeans)
-- Matplotlib, Seaborn
+### Tech Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
 - Jupyter Notebook
 
-## Workflow & Feature Checklist
+### Workflow & Feature Checklist
 
-[x] Load dataset and inspect structure; handle missing values and inconsistent data
-- Removed null CustomerID, cancelled invoices (C), negative Quantity/Price
+#### 1. Data Loading and Inspection
+- Loaded the Online Retail dataset.
+- Inspected the dataset structure and data types.
+- Checked for missing values and inconsistent data.
 
-[x] Descriptive statistics: average purchase value, purchase frequency, customer lifetime value
-- Calculated via RFM table (4338 customers)
+#### 2. Data Cleaning
+Removed or handled:
+- CustomerID missing values
+- Cancelled invoices
+- Negative quantity values
+- Invalid or negative price values
 
-[x] Feature selection: RFM Analysis
-- Recency: Days since last purchase
-- Frequency: Count of unique invoices
-- Monetary: Sum of TotalPrice
+#### 3. Descriptive Statistics
+Analyzed:
+- Average purchase value
+- Purchase frequency
+- Customer lifetime value
 
-[x] Data normalisation before clustering
-- Used StandardScaler on RFM features
+#### 4. RFM Analysis
+Created an RFM table for customers using:
 
-[x] Apply K-Means clustering + Elbow Method
-- Tested K=1 to 10, Optimal K=4 found
+- **Recency** – Number of days since the customer's last purchase.
+- **Frequency** – Number of purchases made by the customer.
+- **Monetary** – Total amount spent by the customer.
 
-[x] Visualise clusters using scatter plots
-- Recency vs Monetary, Frequency vs Monetary
+The analysis was performed on **4,338 customers**.
 
-[x] Profile each cluster
-- Mean R,F,M per cluster to label customer type
+#### 5. Feature Selection
+Selected the following features for customer segmentation:
+- Recency
+- Frequency
+- Monetary
 
-[x] Bar chart: number of customers per cluster
+#### 6. Data Scaling
+Applied `StandardScaler` to standardize the RFM features before clustering.
 
-[x] Insights section
+#### 7. Customer Segmentation
+Applied the **K-Means clustering algorithm** to group customers based on their purchasing behaviour.
 
-## Key Insights
+#### 8. Elbow Method
+Used the Elbow Method and inertia values for different numbers of clusters to help determine a suitable number of customer segments.
 
-1. **Cluster 0 - Loyal Champions (High Value):** Low Recency, High Freq, High Monetary. Action: VIP loyalty program, early access.
-2. **Cluster 1 - At-Risk / Can't Lose Them:** High Recency, High Monetary. Action: Win-back campaign with 20% discount.
-3. **Cluster 2 - New / Low Spenders (Largest):** Low Recency, Low Freq, Low Monetary. Action: Onboarding + bestseller recommendation.
-4. **Cluster 3 - Regular / Potential Loyalists:** Medium R,F,M. Action: Loyalty points to move to Cluster 0.
+#### 9. Cluster Analysis
+Analyzed the characteristics of each cluster based on:
+- Recency
+- Frequency
+- Monetary value
 
-## Conclusion
-RFM + K-Means successfully identified 4 actionable segments. Focus on retention of Cluster 0 and reactivation of Cluster 1 for maximum ROI.
+#### 10. Visualizations
+Created visualizations to understand:
+- Customer segment distribution
+- RFM characteristics of clusters
+- Differences in purchasing behaviour between customer groups
 
-## How to Run
-1. pip install pandas scikit-learn matplotlib seaborn
-2. jupyter notebook online_retail.ipynb
+### Key Insights
+1. Customers can be grouped into different segments based on their purchasing behaviour.
+2. RFM analysis helps identify differences in customer recency, purchase frequency, and spending.
+3. K-Means clustering provides distinct customer groups that can be analyzed for targeted marketing.
+
+### Business Recommendations
+1. Develop targeted marketing campaigns for different customer segments.
+2. Provide retention offers to customers who have not purchased recently.
+3. Reward frequent and high-value customers through loyalty programs.
+4. Use customer segment characteristics to personalize promotional offers.
+
+### Project Files
+- `T ARCHANA_TASK2.ipynb` - Jupyter Notebook containing the complete analysis.
+- `Online_Retail.csv` - Dataset used for the analysis.
+- `screenshots/` - Screenshots of analysis outputs and visualizations.
+
+### Conclusion
+Customer segmentation using RFM analysis and K-Means clustering helps identify groups of customers with similar purchasing behaviour. These segments can support targeted marketing, customer retention, and personalized business strategies.
