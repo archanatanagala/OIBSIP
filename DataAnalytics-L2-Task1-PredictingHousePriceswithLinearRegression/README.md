@@ -73,7 +73,7 @@ The project includes:
 4. Coefficient Analysis shows Overall Qual, GrLivArea, and TotalBsmtSF have highest positive impact on house price. Some features like Overall Cond have negative impact.
 5. Missing values were handled by median/mode imputation and categorical features were One-Hot Encoded - required because Linear Regression needs numerical input.
 
-# Business Recommendation 
+## Business Recommendation 
 Linear Regression is effective for Ames Housing price prediction and gives interpretable coefficients. Overall Quality is the single most important driver of price. For business use, this can help in automated property valuation.
 
 ## Results
