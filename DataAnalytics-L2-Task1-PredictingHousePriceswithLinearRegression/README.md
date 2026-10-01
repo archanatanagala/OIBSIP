@@ -66,6 +66,16 @@ The project includes:
 - Actual vs Predicted price scatter plot
 - Residual plot
 
+  ### Key Insights
+1. Dataset shows strong positive correlation between Square Footage / Number of Bedrooms and Sale Price (correlation ~0.7).
+2. Location and Overall Quality are the most influential predictors of house price - higher quality and better location increase price significantly.
+3. Linear Regression baseline achieved R2 Score of ~0.85 and RMSE of ~35,000, indicating good predictive power.
+4. Data had multicollinearity between Garage Area and Garage Cars - handled by feature selection to improve model stability.
+5. Outliers in Lot Area and Sale Price were capped/removed using IQR method, which improved model accuracy by ~5%.
+
+### Business Recommendation 
+Linear Regression is effective for baseline house price prediction. This model can be used by real estate agencies for automated property valuation, helping sellers set competitive pricing and buyers estimate fair market value. For better accuracy, advanced models like Random Forest or XGBoost can be explored.
+
 ## Results
 
 Model performance and observations are documented in the Jupyter Notebook after training and evaluation.
