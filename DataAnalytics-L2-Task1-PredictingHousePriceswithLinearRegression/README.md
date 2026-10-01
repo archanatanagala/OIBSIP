@@ -66,15 +66,15 @@ The project includes:
 - Actual vs Predicted price scatter plot
 - Residual plot
 
-  ### Key Insights
-1. Dataset shows strong positive correlation between Square Footage / Number of Bedrooms and Sale Price (correlation ~0.7).
-2. Location and Overall Quality are the most influential predictors of house price - higher quality and better location increase price significantly.
-3. Linear Regression baseline achieved R2 Score of ~0.85 and RMSE of ~35,000, indicating good predictive power.
-4. Data had multicollinearity between Garage Area and Garage Cars - handled by feature selection to improve model stability.
-5. Outliers in Lot Area and Sale Price were capped/removed using IQR method, which improved model accuracy by ~5%.
+ ### Key Insights
+1. Dataset: Ames Housing Dataset - 1460 houses, 80 features. Target variable SalePrice is right-skewed, handled via EDA.
+2. Top correlated features with SalePrice are Overall Qual (0.79), GrLivArea (0.71), GarageCars and TotalBsmtSF - bigger area and higher quality = higher price.
+3. Linear Regression baseline achieved good performance with R2 ~0.82 and low RMSE on test set. Ridge and Lasso were compared as bonus, with Ridge performing slightly better in controlling overfitting.
+4. Coefficient Analysis shows Overall Qual, GrLivArea, and TotalBsmtSF have highest positive impact on house price. Some features like Overall Cond have negative impact.
+5. Missing values were handled by median/mode imputation and categorical features were One-Hot Encoded - required because Linear Regression needs numerical input.
 
-### Business Recommendation 
-Linear Regression is effective for baseline house price prediction. This model can be used by real estate agencies for automated property valuation, helping sellers set competitive pricing and buyers estimate fair market value. For better accuracy, advanced models like Random Forest or XGBoost can be explored.
+# Business Recommendation 
+Linear Regression is effective for Ames Housing price prediction and gives interpretable coefficients. Overall Quality is the single most important driver of price. For business use, this can help in automated property valuation.
 
 ## Results
 
